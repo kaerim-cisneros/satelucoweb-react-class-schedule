@@ -1,4 +1,7 @@
 @import 'variables';
+@import 'library';
+@import 'libraryCourse';
+@import 'arrow';
 
 html {
   
@@ -23,10 +26,6 @@ body {
     grid-template-rows: 1fr;
 }
 
-.library {
-    grid-column: library-s/library-e;
-    
-}
 
 .schedule {
     grid-column: schedule-s/schedule-e;

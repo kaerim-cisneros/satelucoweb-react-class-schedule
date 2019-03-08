@@ -1,0 +1,25 @@
+@import 'variables';  
+
+.library-course {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: 50px 1fr;
+    background-color: $color-living-coral;
+
+   &-title-wrp{
+        grid-row: 1/2;
+        display: flex;
+    }
+    
+    &-arrow{
+        grid-row: 1/2;
+    }
+
+    &-action{
+        grid-row: 1/2;
+    }
+
+    &-description {
+        grid-row: 2/3;
+    }
+}
