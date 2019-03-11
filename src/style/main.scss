@@ -2,6 +2,9 @@
 @import 'library';
 @import 'libraryCourse';
 @import 'arrow';
+@import 'schedule';
+@import 'scheduleCourse';
+@import 'progressTracker';
 
 html {
   
@@ -29,9 +32,10 @@ body {
 
 .schedule {
     grid-column: schedule-s/schedule-e;
+    position: relative;
     height: 100%;
     width: 100%;
-    position: relative;
+    
     
 }
 

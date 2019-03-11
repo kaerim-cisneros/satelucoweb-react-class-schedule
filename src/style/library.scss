@@ -2,7 +2,7 @@
 .library {
     grid-column: library-s/library-e;    
     display: grid;
-    grid-template-rows: [title-s] 100px [tittle-e course-s] repeat (auto-fit, 1fr) [course-e];
+    grid-template-rows: [title-s] 50px [tittle-e course-s] repeat (auto-fit, 1fr) [course-e];
     grid-row-gap:22px;
 
 
