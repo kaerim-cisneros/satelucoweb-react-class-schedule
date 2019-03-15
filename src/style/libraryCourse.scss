@@ -9,17 +9,21 @@
    &-title-wrp{
         grid-row: 1/2;
         display: flex;
+        background-color: red;
     }
     
     &-arrow{
         grid-row: 1/2;
+        background-color: yellow;
     }
 
     &-action{
         grid-row: 1/2;
+        background-color: green;
     }
 
     &-description {
         grid-row: 2/3;
+        background-color: aqua;
     }
 }
