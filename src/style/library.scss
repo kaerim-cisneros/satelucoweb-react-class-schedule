@@ -1,13 +1,21 @@
+@import 'variables';
 
 .library {
     grid-column: library-s/library-e;    
     display: grid;
     grid-template-rows: [title-s] 100px [tittle-e course-s] repeat (auto-fit, 1fr) [course-e];
     grid-row-gap:22px;
-    
-
+    padding-left: 100px;
+    padding-top: 100px;
+    margin-right: -50px;
 
     &-title {
+        color: $color-living-coral;
+        font-family: 'Slabo 27px', serif;
+        font-size: 34px;
+        line-height: 74px;
+        border-left: 4px solid $color-green;
+        padding-left: 40px ;
         
     }
 }

@@ -1,29 +1,84 @@
 @import 'variables';  
 
+@mixin klasses-options{
+    background-color:#fafafa;
+    box-shadow: 0 2px 50px 0 rgba(0,0,0,0.21);
+}   
+
 .library-course {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: 50px 1fr;
-    background-color: $color-living-coral;
+    grid-template-rows: 80px 1fr;
+    padding: 15px 25px;
+    
+    &:hover{
+        @include klasses-options();
+    }
 
    &-title-wrp{
         grid-row: 1/2;
         display: flex;
-        background-color: red;
+        grid-column: 1;
+ 
+    }
+
+    &-line {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        border-bottom: 1px solid #f1f1f1;
+        margin-top: 19px;
+        margin-bottom: 24px;
+    }
+
+
+    &-title{
+        color:gray;
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+      
+    }
+
+    &-icon{
+        font-size: 20px;
+        line-height: 36px;
+        color: $color-living-coral;
+        margin-left: 10px;
     }
     
     &-arrow{
         grid-row: 1/2;
-        background-color: yellow;
+       
     }
-
+    
     &-action{
         grid-row: 1/2;
-        background-color: green;
+  
     }
 
     &-description {
         grid-row: 2/3;
-        background-color: aqua;
+        margin-left: 10px;
+        
+        
+        label {
+            color: $color-green;
+            font-family: 'Karla', sans-serif;
+            font-size: 16px;
+            text-align: center;
+
+
+        }
+
+        p {
+            color: $color-gray;
+            font-family: 'Karla', sans-serif;
+            font-size: 14px;
+
+        }
     }
+}
+
+.library-course-selected{
+    @include klasses-options();
 }
