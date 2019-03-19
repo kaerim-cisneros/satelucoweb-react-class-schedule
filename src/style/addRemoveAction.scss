@@ -37,6 +37,7 @@
 .action-remove {
 
     background-color: $color-living-coral;
+    border: 1px solid #fafafa;
 
     &:before {
         transform: translate(-50%, -50%) rotate(45deg);

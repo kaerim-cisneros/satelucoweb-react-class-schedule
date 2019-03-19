@@ -17,17 +17,20 @@ class LibraryCourse extends Component {
         this.state = {
           status: true,
           height: 0
-        }
+        };
       }
     
      handleCallback = function(status) {
-        let height = this.state.height == 0 ? 80:0;
+        let height = this.state.height == 0 ? 'auto':0;
         if(!status) {
             document.getElementById(this.id).classList.add('library-course-selected');
           } else {
             document.getElementById(this.id).classList.remove('library-course-selected');
           }
-        this.setState({ status })
+        this.setState({ 
+            status,
+            height
+         });
       }.bind(this)
     
 
@@ -36,10 +39,9 @@ class LibraryCourse extends Component {
         return (
             <div id={this.id} className="library-course">
                 <div className= "library-course-title-wrp">
-                    <label className="library-course-title">{ this.props.title }</label>
+                    <div className="library-course-title">{ this.props.title }</div>
                     { Icon('fas fa-check', 'library-course-icon') }
                 </div>
-                <div className="library-course-line" />
                 <Arrow 
                     callback={status => this.handleCallback(status)}
                     id={this.props.id} 

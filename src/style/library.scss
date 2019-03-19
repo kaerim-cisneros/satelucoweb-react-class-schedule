@@ -2,20 +2,23 @@
 
 .library {
     grid-column: library-s/library-e;    
+    grid-row: 1/-1;
+
     display: grid;
     grid-template-rows: [title-s] 100px [tittle-e course-s] repeat (auto-fit, 1fr) [course-e];
     grid-row-gap:22px;
+
     padding-left: 100px;
     padding-top: 100px;
-    margin-right: -50px;
 
     &-title {
         color: $color-living-coral;
         font-family: 'Slabo 27px', serif;
         font-size: 34px;
-        line-height: 74px;
-        border-left: 4px solid $color-green;
+        border-left: 2px solid $color-green;
         padding-left: 40px ;
+        padding-top: 15px;
+        height: 64px;
         
     }
 }

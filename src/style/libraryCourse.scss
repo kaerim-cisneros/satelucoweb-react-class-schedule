@@ -7,9 +7,15 @@
 
 .library-course {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: 80px 1fr;
-    padding: 15px 25px;
+    grid-template-columns: 1fr 45px 58px;
+    grid-template-rows: 32px 1fr;
+    padding: 12px 0;
+    padding-left: 25px;
+    padding-bottom: 0px;
+    align-items: center;
+
+    z-index: 50;
+    
     
     &:hover{
         @include klasses-options();
@@ -18,47 +24,43 @@
    &-title-wrp{
         grid-row: 1/2;
         display: flex;
-        grid-column: 1;
- 
+        grid-column: 1/2;
+         
     }
-
-    &-line {
-        grid-column: 1/-1;
-        grid-row: 1/2;
-        border-bottom: 1px solid #f1f1f1;
-        margin-top: 19px;
-        margin-bottom: 24px;
-    }
-
 
     &-title{
         color:gray;
         font-family: 'Karla', sans-serif;
         font-weight: 700;
         font-size: 20px;
-      
+             
     }
 
     &-icon{
         font-size: 20px;
         line-height: 36px;
         color: $color-living-coral;
-        margin-left: 10px;
+        padding-left: 16px;
     }
     
     &-arrow{
         grid-row: 1/2;
+        grid-column: 2/3;
        
     }
     
     &-action{
         grid-row: 1/2;
+        grid-column: 3/4;
+
+        justify-self: center;
   
     }
 
     &-description {
         grid-row: 2/3;
-        margin-left: 10px;
+        padding-top: 15px;
+        border-top: 1px solid #f1f1f1;
         
         
         label {
