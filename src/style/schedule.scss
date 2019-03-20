@@ -1,6 +1,6 @@
 .schedule{
     display: grid;
-    grid-template-rows: [space-one-s] 1fr [space-one-e title-s] 100px [title-e] repeat(5, 80px) [progress-s] 1fr [progress-e];
+    grid-template-rows: 230px repeat(5, 60px) [progress-s] 1fr [progress-e];
     grid-row-gap: 22px;
     
     grid-column: schedule-s/schedule-e;
@@ -12,9 +12,10 @@
     align-items: center;
     justify-items: center;
     align-content: center;
+    
 
     &-title{
-        
+        margin-top: 150px;
         border-left: 2px solid #fafafa;
         color: #fafafa;
         font-family: 'Slabo 27px', serif;
@@ -22,6 +23,7 @@
         padding-left: 30px;
         padding-top: 6px;
         padding-bottom: 6px;
+        
 
     }
 }
