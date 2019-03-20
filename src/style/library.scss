@@ -3,23 +3,40 @@
 .library {
     grid-column: library-s/library-e;    
     grid-row: 1/-1;
+    
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+   
+    &-container{
 
-    display: grid;
-    grid-template-rows: [title-s] 100px [tittle-e course-s] repeat (auto-fit, 1fr) [course-e];
-    grid-row-gap:22px;
+        display: grid;
+        grid-template-rows: [title-s] 100px [tittle-e course-s] repeat (auto-fit, 1fr) [course-e];
+        grid-row-gap:22px;
 
-    padding-left: 100px;
-    padding-top: 100px;
+        padding-top: 7%;
+        padding-left: 5%;
+        padding-bottom: 76px;
+        overflow-y: scroll;
 
-    &-title {
-        color: $color-living-coral;
-        font-family: 'Slabo 27px', serif;
-        font-size: 34px;
-        border-left: 2px solid $color-green;
-        padding-left: 40px ;
-        padding-top: 15px;
-        height: 64px;
-        
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+        right: -15px;
+
+        &-title {
+            color: $color-living-coral;
+            font-family: 'Slabo 27px', serif;
+            font-size: 34px;
+            border-left: 2px solid $color-green;
+            padding-left: 40px ;
+            padding-top: 15px;
+            height: 64px;
+        }
     }
+    
 }
 

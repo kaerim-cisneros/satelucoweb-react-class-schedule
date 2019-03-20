@@ -22,8 +22,10 @@ class Library extends Component {
     render() {
         return (
             <div className="library">
-                <h1 className="library-title">Course Library</h1>
-                { this.renderCourses() }
+                <div className="library-container">
+                    <h1 className="library-container-title">Course Library</h1>
+                    { this.renderCourses() }
+                </div>
             </div>
         )
     }
